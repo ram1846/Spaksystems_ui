@@ -915,7 +915,7 @@ section.for-login-with-email-link .form-login-with-email-link.hide {
 			{% set welcome_message = frappe.get_doc("Website Settings").welcome_message %}
 			<h1 class="welcome-title">{{ _("Welcome to {0}").format(app_name or _("Our Platform")) }}</h1>
 			<p class="welcome-text">
-				{{ welcome_message or _("Manage your support tickets efficiently. Track, respond, and resolve customer inquiries quickly with our secure and reliable ticketing system.") }}
+                {{ welcome_message or '' }}
 			</p>
 		</div>
 	</div>
